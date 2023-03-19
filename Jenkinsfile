@@ -13,6 +13,6 @@ pipeline {
 		stage('Deployment'){
 		    steps {
 			
-			sh 'cp target/snapdeal.war vboxuser@127.0.1.1:/home/vboxuser/Downloads/apache-tomcat-9.0.71/webapps'
+			sh 'cp target/snapdeal.war /home/vboxuser/Downloads/apache-tomcat-9.0.71/webapps'
 	}
 }}}
